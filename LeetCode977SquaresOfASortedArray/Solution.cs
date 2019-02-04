@@ -10,7 +10,7 @@ namespace LeetCode977SquaresOfASortedArray
     {
         public int[] SortedSquares(int[] A)
         {
-            throw new NotImplementedException();
+            return A.Select(x => x * x).OrderBy(x => x).ToArray();
         }
     }
 }
